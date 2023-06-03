@@ -1,0 +1,40 @@
+{
+  "streams": [
+    {
+      "tap_stream_id": "gem_projects",
+      "key_properties": [
+        "id"
+      ],
+      "schema": {
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "created": {
+            "type": "string"
+          },
+          "user_id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "privacy_type": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "is_archived": {
+            "type": "string"
+          },
+          "last_refresh": {
+            "type": "string"
+          }
+        }
+      },
+      "stream": "gem_projects",
+      "metadata": []
+    }
+  ]
+}

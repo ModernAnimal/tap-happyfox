@@ -1,0 +1,13 @@
+{
+    "properties": {
+		"id": {"type": "string", "key": true},
+		"timestamp": {"type": "string"},
+		"candidate_id": {"type": "string"},
+		"contact_medium": {"type": "string"},
+		"user_id": {"type": "string"},
+		"on_behalf_of_user_id": {"type": "string"},
+		"type": {"type": "string"},
+		"subtype": {"type": "string"},
+		"reply_status": {"type": "string"}
+	}
+}

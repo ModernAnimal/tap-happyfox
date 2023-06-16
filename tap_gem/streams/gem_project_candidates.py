@@ -22,7 +22,7 @@ def stream(api_key):
             )
             for project in projects:
                 singer.write_record(
-                    "gem_events",
+                    "gem_project_candidates",
                     {
                         "project_id": project_id,
                         "candidate_id": project["candidate_id"],

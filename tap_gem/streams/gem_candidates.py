@@ -20,7 +20,7 @@ def stream(api_key):
         for candidate in candidates:
             CANDIDATE_IDS.append(candidate["id"])
             singer.write_record(
-                "gem_events",
+                "gem_candidates",
                 {
                     "id": candidate["id"],
                     "created_at": candidate["created_at"],

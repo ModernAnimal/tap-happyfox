@@ -20,7 +20,7 @@ def stream(api_key):
             users, has_next = gem_api("users", api_key, page_num)
             for user in users:
                 singer.write_record(
-                    "gem_events",
+                    "gem_users",
                     {
                         "id": user["id"],
                         "name": user.get("name", None),

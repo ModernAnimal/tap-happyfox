@@ -24,6 +24,7 @@ def stream(api_key):
                 singer.write_record(
                     "gem_project_candidates",
                     {
+                        "id": project_id + '|' + project["candidate_id"],
                         "project_id": project_id,
                         "candidate_id": project["candidate_id"],
                         "added_at": project.get("added_at", None),

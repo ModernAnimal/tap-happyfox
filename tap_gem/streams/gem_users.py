@@ -29,7 +29,7 @@ def stream(api_key):
                     },
                 )
             page_num += 1
-            logging.info("Gem page completed %s", page_num)
+            logging.info("Gem users page completed %s", page_num)
 
     except Exception as e:
         logging.exception(e)

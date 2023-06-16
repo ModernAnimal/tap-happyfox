@@ -38,6 +38,6 @@ def stream(api_key):
 
         page_num += 1
 
-        logging.info("Gem page completed %s", page_num)
+        logging.info("Gem candidates page completed %s", page_num)
 
     logging.info("Completed gem_candidates.py")

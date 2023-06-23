@@ -39,6 +39,6 @@ def stream(api_key, api_code):
 
         page_num += 1
 
-        logging.info("Gem tickets page completed %s", page_num)
+        logging.info("Happyfox tickets page completed %s", page_num)
 
-    logging.info("Completed gem_tickets.py")
+    logging.info("Completed happyfox_tickets.py")

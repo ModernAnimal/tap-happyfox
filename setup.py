@@ -2,7 +2,7 @@
 from setuptools import find_packages, setup
 
 setup(
-    name="tap-gem",
+    name="tap-happyfox",
     version="0.1.0",
     description="Singer.io tap for extracting data",
     author="Stitch",
@@ -16,7 +16,7 @@ setup(
     ],
     entry_points="""
     [console_scripts]
-    tap-gem=tap_gem:main
+    tap-happyfox=tap_happyfox:main
     """,
     packages=find_packages(),
     package_data={"schemas": ["tap_gem/schemas/*.json"]},

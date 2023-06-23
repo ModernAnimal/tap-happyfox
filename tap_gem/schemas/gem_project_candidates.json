@@ -1,9 +1,0 @@
-{
-    "properties": {
-		"id": {"type": "string", "key": true},
-		"project_id": {"type": "string"},
-		"candidate_id": {"type": "string"},
-		"added_at": {"type": "string"},
-		"last_refresh": {"type": "string"}
-	}
-}

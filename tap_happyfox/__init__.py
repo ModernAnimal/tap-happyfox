@@ -7,7 +7,7 @@ from singer import utils
 from singer.catalog import Catalog, CatalogEntry
 from singer.schema import Schema
 
-import tap_gem.streams
+import tap_happyfox.streams
 
 REQUIRED_CONFIG_KEYS = ["api_key"]
 LOGGER = singer.get_logger()
@@ -67,6 +67,7 @@ def sync(config, state, catalog):
         )
         getattr(tap_gem.streams, stream.tap_stream_id).stream(
             api_key=config["api_key"],
+            api_code=config["api_code"],
         )
 
     return

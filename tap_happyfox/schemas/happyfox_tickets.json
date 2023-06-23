@@ -1,0 +1,23 @@
+{
+    "properties": {
+		"id": {"type": "integer", "key": true},
+		"subject": {"type": "string"},
+		"time_spent": {"type": "integer"},
+		"first_message": {"type": "string"},
+		"messages_count": {"type": "integer"},
+		"status__name": {"type": "string"},
+		"category__name": {"type": "string"},
+		"priority__id": {"type": "id"},
+		"priority__name": {"type": "string"},
+		"custom_fields": {
+			"type": "object",
+			"properties": {
+				"name": {"type": "string"},
+				"value": {"type": "string"},
+			}
+		},
+		"created_at": {"type": "string"},
+		"updated_at": {"type": "string"},
+		"last_staff_reply_at": {"type": "string"},
+	}
+}

@@ -1,8 +1,0 @@
-{
-    "properties": {
-		"id": {"type": "string", "key": true},
-		"name": {"type": "string"},
-		"email": {"type": "string"},
-		"last_refresh": {"type": "string"}
-	}
-}

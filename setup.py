@@ -19,6 +19,6 @@ setup(
     tap-happyfox=tap_happyfox:main
     """,
     packages=find_packages(),
-    package_data={"schemas": ["tap_gem/schemas/*.json"]},
+    package_data={"schemas": ["tap_happyfox/schemas/*.json"]},
     include_package_data=True,
 )

@@ -19,7 +19,7 @@ def stream(api_key, api_code):
         tickets, has_next = happyfox_api(api_key, api_code, page_num)
         for ticket in tickets:
             singer.write_record(
-                "gem_tickets",
+                "happyfox_tickets",
                 {
                     "id": ticket["id"],
                     "subject": ticket["subject"],

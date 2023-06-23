@@ -18,6 +18,6 @@
 		},
 		"created_at": {"type": "string"},
 		"updated_at": {"type": "string"},
-		"last_staff_reply_at": {"type": "string"},
+		"last_staff_reply_at": {"type": "string"}
 	}
 }

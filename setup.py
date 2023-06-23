@@ -8,7 +8,7 @@ setup(
     author="Stitch",
     url="http://singer.io",
     classifiers=["Programming Language :: Python :: 3 :: Only"],
-    py_modules=["tap_gem"],
+    py_modules=["tap_happyfox"],
     install_requires=[
         # NB: Pin these to a more specific version for tap reliability
         "singer-python",

@@ -65,7 +65,7 @@ def sync(config, state, catalog):
             schema=stream.schema.to_dict(),
             key_properties=stream.key_properties,
         )
-        getattr(tap_gem.streams, stream.tap_stream_id).stream(
+        getattr(tap_happyfox.streams, stream.tap_stream_id).stream(
             api_key=config["api_key"],
             api_code=config["api_code"],
         )

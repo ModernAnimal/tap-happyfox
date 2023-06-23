@@ -1,2 +1,2 @@
 include LICENSE
-include tap_gem/schemas/*.json
+include tap_happyfox/schemas/*.json

@@ -13,7 +13,7 @@
 			"type": "object",
 			"properties": {
 				"name": {"type": "string"},
-				"value": {"type": "string"},
+				"value": {"type": "string"}
 			}
 		},
 		"created_at": {"type": "string"},

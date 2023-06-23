@@ -32,7 +32,7 @@ def stream(api_key, api_code):
                     "priority__name": ticket['priority']['name'],
                     "custom_fields": ticket['custom_fields'],
                     "created_at": ticket['created_at'],
-                    "updated_at": ticket['updated_at'],
+                    "updated_at": ticket.get('updated_at', ''),
                     "last_staff_reply_at": ticket['last_staff_reply_at'],
                 },
             )

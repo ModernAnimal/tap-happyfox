@@ -9,7 +9,7 @@ def happyfox_api(api_key, api_code, page_num):
     auth = HTTPBasicAuth(api_key, api_code)
 
     paginated_url = (
-        f"https://support.modernanimal.com/api/1.1/json/tickets/?category=29&size={page_size}&page={page_num}"
+        f"https://support.modernanimal.com/api/1.1/json/tickets/?size={page_size}&page={page_num}"
     )
     page_response = requests.get(paginated_url, auth=auth).json()
     data = page_response["data"]

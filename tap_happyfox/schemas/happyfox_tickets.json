@@ -23,6 +23,7 @@
 		"updates": {
 			"type": "object",
 			"properties": {
+				"timestamp": {"type": "string", "format": "date-time"},
 				"status_change": {
 					"type": "object",
 					"properties": {

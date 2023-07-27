@@ -18,7 +18,8 @@
 		},
 		"created_at": {"type": "string"},
 		"updated_at": {"type": "string"},
-		"last_staff_reply_at": {"type": "string"},
+		"last_staff_reply_at": {"type": "string", "format": "date-time"},
+		"last_user_reply_at": {"type": "string", "format": "date-time"},
 		"sla_breaches": {"type": "integer"},
 		"updates": {
 			"type": "object",
@@ -34,6 +35,7 @@
 		},
 		"assigned_to": {"type": "string"},
 		"user": {"type": "string"},
+		"user_email": {"type": "string"},
 		"unresponded": {"type": "boolean"}
 	}
 }

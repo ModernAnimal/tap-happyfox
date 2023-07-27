@@ -34,10 +34,12 @@ def stream(api_key, api_code):
                     "created_at": ticket['created_at'],
                     "updated_at": ticket.get('last_updated_at', ''),
                     "last_staff_reply_at": ticket['last_staff_reply_at'],
+                    "last_user_reply_at": ticket['last_user_reply_at'],
                     "sla_breaches": ticket['sla_breaches'],
                     "updates": ticket['updates'],
                     "assigned_to": ticket['assigned_to']['name'],
                     "user": ticket['user']['name'],
+                    "user_email": ticket['user']['email'],
                     "unresponded": ticket['unresponded'],
 
                 },

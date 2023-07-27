@@ -18,6 +18,22 @@
 		},
 		"created_at": {"type": "string"},
 		"updated_at": {"type": "string"},
-		"last_staff_reply_at": {"type": "string"}
+		"last_staff_reply_at": {"type": "string"},
+		"sla_breaches": {"type": "integer"},
+		"updates": {
+			"type": "object",
+			"properties": {
+				"timestamp": {"type": "string", "format": "date-time"},
+				"status_change": {
+					"type": "object",
+					"properties": {
+						"new": {"type": "integer"}
+					}
+				}
+			}
+		},
+		"assigned_to": {"type": "string"},
+		"user": {"type": "string"},
+		"unresponded": {"type": "boolean"}
 	}
 }

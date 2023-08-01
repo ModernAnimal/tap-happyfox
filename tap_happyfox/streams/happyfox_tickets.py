@@ -38,8 +38,7 @@ def stream(api_key, api_code):
                     "sla_breaches": ticket['sla_breaches'],
                     "updates": ticket['updates'],
                     "assigned_to": ticket['assigned_to']['name'],
-                    "user": ticket['user']['name'],
-                    "user_email": ticket['user']['email'],
+                    "user": ticket['user'],
                     "unresponded": ticket['unresponded'],
 
                 },

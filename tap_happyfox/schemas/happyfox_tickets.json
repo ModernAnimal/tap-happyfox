@@ -33,9 +33,21 @@
 				}
 			}
 		},
-		"assigned_to": {"type": "string"},
-		"user": {"type": "string"},
-		"user_email": {"type": "string"},
+		"assigned_to": {
+			"type": "object",
+			"properties": {
+				"name": {"type": "string"},
+				"value": {"type": "string"}
+			}
+		},
+		"user": {
+			"type": "object",
+			"properties": {
+				"name": {"type": "string"},
+				"email": {"type": "string"},
+				"value": {"type": "string"}
+			}
+		},
 		"unresponded": {"type": "boolean"}
 	}
 }

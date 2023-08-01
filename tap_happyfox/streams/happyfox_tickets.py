@@ -37,7 +37,7 @@ def stream(api_key, api_code):
                     "last_user_reply_at": ticket['last_user_reply_at'],
                     "sla_breaches": ticket['sla_breaches'],
                     "updates": ticket['updates'],
-                    "assigned_to": ticket['assigned_to']['name'],
+                    "assigned_to": ticket['assigned_to'],
                     "user": ticket['user'],
                     "unresponded": ticket['unresponded'],
 

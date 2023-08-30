@@ -40,7 +40,7 @@ def stream(api_key, api_code):
                     "assigned_to": ticket['assigned_to'],
                     "user": ticket['user'],
                     "unresponded": ticket['unresponded'],
-
+                    "tags": ticket['tags'],
                 },
             )
 

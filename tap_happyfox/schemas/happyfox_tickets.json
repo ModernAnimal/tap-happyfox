@@ -48,6 +48,7 @@
 				"value": {"type": "string"}
 			}
 		},
-		"unresponded": {"type": "boolean"}
+		"unresponded": {"type": "boolean"},
+		"tags": {"type": "string"}
 	}
 }

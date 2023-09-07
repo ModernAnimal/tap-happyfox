@@ -24,7 +24,7 @@ def stream(api_key, api_code):
                     "id": ticket["id"],
                     "subject": ticket["subject"],
                     "time_spent": ticket['time_spent'],
-                    "first_message": ticket['first_message'],
+                    "first_message": ticket['first_message'].replace("\n", ""),
                     "messages_count": ticket['messages_count'],
                     "status__name": ticket['status']['name'],
                     "category__name": ticket['category']['name'],

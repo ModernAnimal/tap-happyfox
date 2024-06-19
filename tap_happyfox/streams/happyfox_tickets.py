@@ -51,12 +51,12 @@ def stream(api_key, api_code, categories):
                     },
                 )
 
-            page_num += 1
-
             logging.info(
                 "Happyfox tickets - category %s, page completed %s",
                 category,
                 page_num
             )
+
+            page_num += 1
 
     logging.info("Completed happyfox_tickets.py")

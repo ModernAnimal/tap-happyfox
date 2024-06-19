@@ -9,7 +9,7 @@ from singer.schema import Schema
 
 import tap_happyfox.streams
 
-REQUIRED_CONFIG_KEYS = ["api_key"]
+REQUIRED_CONFIG_KEYS = ["api_key", "api_code", "categories"]
 LOGGER = singer.get_logger()
 
 
@@ -68,6 +68,7 @@ def sync(config, state, catalog):
         getattr(tap_happyfox.streams, stream.tap_stream_id).stream(
             api_key=config["api_key"],
             api_code=config["api_code"],
+            categories=config["categories"],
         )
 
     return
